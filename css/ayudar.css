@@ -1,0 +1,136 @@
+.contenedor-banner-ayudar{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 40px; /* Espaciado inferior para separar del contenido siguiente */
+    margin: 20px; /* Márgenes para resoluciones más grandes */
+}
+
+.contenedor-banner-ayudar img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 500px; /* Mantiene la proporción de la imagen */
+    display: block;
+    opacity: 0.7; /* Ajusta la opacidad de la imagen */
+    transition: opacity 0.5s ease; 
+    object-fit: cover;/* Agrega una transición suave de opacidad */
+}
+
+
+.Menu H1{
+    height: 100%;
+    color: #fff;
+    right: 0;
+    text-align: right;
+    padding-right: 7%;
+    padding-top: 25px;
+    width:100vw;
+    height: 1000%;
+
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;/* Fondo negro con opacidad del 50% */
+}
+
+.text-banner-ayudar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    z-index: 2; 
+}
+
+.form-container {
+    border-radius: 5px;
+    background-color: white; /* Color de fondo lila claro */
+    padding: 20px;
+    width: 700px; /* Ancho fijo */
+    margin: auto; /* Centrar el formulario */
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5); /* Sombra lila */
+}
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #8e44ad; /* Borde del mismo color lila */
+    border-radius: 8px; /* Bordes más redondeados */
+    margin-top: 6px; /* Espacio adicional entre campos */
+    font-size: 16px; /* Tamaño de fuente más grande */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #8e44ad; /* Color lila */
+}
+
+
+button {
+    font-size: 20px;
+    background-color: #8e44ad;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6c3483; /* Cambiar a otro tono de lila en hover si deseas */
+}
+
+input:focus,
+textarea:focus {
+    color: #8e44ad; /* Cambia al color lila cuando tiene foco */
+}
+
+
+/* Estilos para el texto en el banner cuando se ve en dispositivos más pequeños */
+@media screen and (max-width: 800px) {
+
+    .contenedor-banner-ayudar {
+        margin: 0; /* Elimina márgenes en dispositivos más pequeños */
+    }
+
+    .text-banner-ayudar {
+        font-size: 18px;
+    }
+
+    .form-container{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+
+
+
+

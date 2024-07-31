@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="less/style.less">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+{{>header}}
+
+    <div class="wrapper">
+        <h1>Preguntas frecuentes (FAQs)</h1>
+    
+
+        <div class="faq">
+            <button class="accordion">
+                1. ¿Cómo puedo realizar un pedido?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Para realizar un pedido, simplemente navega por nuestra tienda en línea, selecciona los productos
+                    que te gusten, elige la talla y cantidad deseada.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                2. ¿Qué métodos de pago aceptan?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Aceptamos varias formas de pago, incluyendo tarjetas de crédito y débito (Visa, MasterCard, American
+                    Express), PayPal y transferencias bancarias. También ofrecemos la opción de pago contra entrega en
+                    algunas ubicaciones.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                3. ¿Realizan envíos internacionales?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    No, lo sentimos por el momento no contamos con envios internacionales, unicamente envios atraves de
+                    todo el pais.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                4. ¿Cuánto tiempo tardará en llegar mi pedido?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    El tiempo de entrega depende de tu ubicación y del método de envío seleccionado. Generalmente, los
+                    pedidos tardan entre 3-7 días hábiles.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                5. ¿Puedo rastrear mi pedido?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Sí, puedes rastrear tu pedido a través de tu correo electrónico por el cual se te estara informando
+                    sobre el paradero de tu pedido.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                6. ¿Cuál es su política de devoluciones?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Aceptamos devoluciones dentro de los 30 días posteriores a la entrega del producto. El artículo debe
+                    estar en su estado original y con sus etiquetas intactas.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                7. ¿Puedo cambiar un artículo por una talla diferente?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>Sí, ofrecemos cambios de talla. Para cambiar un artículo, sigue el mismo proceso que para una
+                    devolución y selecciona la opción de cambio de talla. Si la talla deseada no está disponible, te
+                    emitiremos un reembolso.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                8. ¿Cómo puedo contactar al servicio al cliente?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Puedes contactar a nuestro equipo de servicio al cliente a través de nuestro formulario de contacto
+                    en la página web, enviando un correo electrónico a soporte_skarshop07@gmail.com o llamando al (504)
+                    98-08-94-10.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <button class="accordion">
+                9. ¿Tienen tiendas físicas?
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="pannel">
+                <p>
+                    Actualmente, operamos exclusivamente en línea.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                this.parentElement.classList.toggle("active");
+
+                var pannel = this.nextElementSibling;
+
+                if (pannel.style.display === "block") {
+                    pannel.style.display = "none";
+                } else {
+                    pannel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+{{>footer}}
+
+    <section class="spinner-background">
+        <div class="spinner"></div>
+        <div class="spinner-text">Cargando</div>
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.querySelector(".spinner-background").style.display = "none";
+            }, 400);
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
+</body>
+
+</html>

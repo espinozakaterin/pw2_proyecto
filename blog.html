@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Web</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    {{>header}}
+
+    <main>
+
+        <h1>Blog Skarshop</h1>
+        <p>Bienvenidos a Nuestro Blog, un espacio dedicado a la exploración y promoción de las Tencias y Moda, para que
+            tu puedes vestir de la mejor forma.</p>
+
+        <article class="article">
+            <h2>Tendencias de moda para la temporada verano 2024</h2>
+            <img src="fotos/Tendencias.jpeg" alt="img 1">
+            <p>El verano está aquí y con él vienen nuevas y emocionantes tendencias de moda. Desde colores vibrantes
+                hasta estampados florales, esta temporada promete frescura y estilo.</p>
+        </article>
+
+        <article class="article">
+            <h2>Cómo Combinar Accesorios para un Look Perfecto</h2>
+            <img src="fotos/Accesorios.jpeg" alt="img 2">
+            <p>En esta segunda etapa logramos ir de manera presencial a escuelas y colegios y enseñarles a las chicas de
+                una manera mas practica y didactica el valor y el poder que tienen.</p>
+        </article>
+
+        <article class="article">
+            <h2>Sostenibilidad en la Moda</h2>
+            <h3>Moda Sostenible: Nuestro Compromiso con el Planeta</h3>
+            <img src="fotos/Sostenibilidad.jpeg" alt="img 3">
+            <p>En Skarshop, nos comprometemos a hacer moda de manera responsable. Descubre nuestras
+                prácticas sostenibles y cómo estamos trabajando para reducir nuestro impacto ambiental.
+            </p>
+        </article>
+
+        <article class="ultimo">
+            <h2>Guías de Compra</h2>
+            <h3>Cómo Elegir el Vestido Perfecto para Cada Ocasión</h3>
+            <img src="fotos/Vestidos.jpeg" alt="img 4">
+            <p>Ya sea una boda, una fiesta o una cena informal, elegir el vestido adecuado puede ser un desafío. Te
+                ofrecemos una guía completa para encontrar el vestido perfecto para cada evento.
+            <p>Próximos Eventos: Fechas y detalles.</p>
+            <p>Promociones Actuales: Ofertas y descuentos.</p>
+            </p>
+
+
+        </article>
+
+
+    </main>
+
+    {{>footer}}
+
+    <section class="spinner-background">
+        <div class="spinner"></div>
+        <div class="spinner-text">Cargando</div>
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.querySelector(".spinner-background").style.display = "none";
+            }, 400);
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
+
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
+
+</body>
+
+</html>

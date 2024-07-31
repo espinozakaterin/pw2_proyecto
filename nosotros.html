@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    {{>header}}
+    <main>
+        <section class="services-contenedor" id="nosotros">
+            <h2 class="subtitulo">Acerca de nosotros</h2>
+            <div class="contenedor-servicio">
+                <img src="fotos/Logo-Skarshop.png" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Como empezo todo</h3>
+                        <p> Skarshop nació de una pasión compartida por la moda y el deseo de ofrecer estilos únicos
+                            y asequibles a todo el mundo. Todo comenzó en 2022, cuando un grupo de amigos, apasionados
+                            por el diseño y la moda, se dieron cuenta de que muchas personas buscaban ropa que fuera a
+                            la vez elegante y asequible. Decididos a llenar este vacío en el mercado,
+                            decidieron lanzar Skarshop, una tienda online que combinara lo mejor de ambos mundos.
+                        </p><Br>
+                        <p>
+                            Desde nuestros humildes comienzos, hemos crecido gracias al apoyo de nuestra increíble
+                            comunidad. Cada prenda en nuestra tienda ha sido seleccionada con cuidado para reflejar
+                            las últimas tendencias y, al mismo tiempo, garantizar la calidad y la comodidad.
+                            Nos esforzamos por ofrecer una experiencia de compra inigualable,
+                            brindando a nuestros clientes no solo ropa, sino también un estilo de vida.
+                        </p><Br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-servicio">
+                <img src="fotos/P4.jpeg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Misión</h3>
+                        <p> Nuestra visión es ser la tienda online de ropa líder a nivel global, conocida por su c
+                            ompromiso con la calidad, la innovación y la satisfacción del cliente. Queremos
+                            inspirar a las personas a expresar su individualidad a través de la moda,
+                            ofreciendo una amplia gama de estilos que se adapten a todas las personalidades y ocasiones.
+                            En Skarshop, creemos que la moda no tiene límites y aspiramos
+                            a ser la primera opción para aquellos que buscan destacar y sentirse bien
+                            con lo que llevan puesto.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-servicio">
+                <img src="img/Vision.jpg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Visión</h3>
+                        <p>Nuestra misión es proporcionar a nuestros clientes prendas de moda asequibles y
+                            de alta calidad, respaldadas por un excelente servicio al cliente. Nos dedicamos a
+                            crear una experiencia de compra fácil y agradable, desde la selección de productos
+                            hasta la entrega. En Skarshop, valoramos la sostenibilidad y la responsabilidad social,
+                            trabajando constantemente para reducir nuestro impacto ambiental y apoyar a las comunidades
+                            locales. Queremos que cada cliente se sienta
+                            parte de la familia Skarshop y que disfrute de cada momento en el que usa nuestras prendas.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    {{>footer}}
+
+    <section class="spinner-background">
+        <div class="spinner"></div>
+        <div class="spinner-text">Cargando</div>
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.querySelector(".spinner-background").style.display = "none";
+            }, 400);
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
+</body>
+
+</html>

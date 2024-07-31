@@ -1,0 +1,181 @@
+/* Estilos para el nuevo banner motivacional sobre los programas */
+.contenedor-banner-programas{
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 40px; /* Espaciado inferior para separar del contenido siguiente */
+    margin: 20px; /* Márgenes para resoluciones más grandes */
+}
+
+.container-cards-image {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Márgenes para resoluciones más grandes */
+}
+
+.contenedor-banner-programas img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 500px; /* Mantiene la proporción de la imagen */
+    display: block;
+    opacity: 0.7; /* Ajusta la opacidad de la imagen */
+    transition: opacity 0.5s ease; 
+    object-fit: cover;/* Agrega una transición suave de opacidad */
+}
+
+.card-program-img{
+    width: 100%; 
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    opacity: 0.7; /* Ajusta la opacidad de la imagen */
+    transition: opacity 0.5s ease; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;/* Fondo negro con opacidad del 50% */
+}
+
+.overlay-img-cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(159, 138, 208, 0.5); 
+    z-index: 1;/* Fondo negro con opacidad del 50% */
+}
+
+.text-banner-programas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    z-index: 2; 
+}
+
+/* Estilos para las nuevas cartas de programas */
+.new-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.new-program-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tercera{
+    max-width: 30%;
+}
+
+.primera{
+    max-width: 30%;
+}
+
+.segunda{       
+    max-width: 30%;
+}
+
+/* Estilos para el nuevo número de programa */
+.new-program-number {
+    display: flex;
+    align-items: center;
+    color: #9f8ad0;
+    font-size: 20px;
+    margin-bottom: 15px;    
+}
+
+.new-number {
+    display: inline-block;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Estilos para las nuevas etiquetas como temas, objetivos, beneficios, etc. */
+.new-heading {
+    color: #9f8ad0;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.new-list {
+    list-style: none;
+    padding: 0;
+}
+
+.new-list-item {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1300px) {
+    .tercera{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .primera{
+        margin-right: 7px;
+        max-width: 49%;
+    }
+
+    .segunda{        
+        margin-left: 7px;
+        max-width: 49%;
+    }
+}
+
+/* Estilos para el texto en el banner cuando se ve en dispositivos más pequeños */
+@media screen and (max-width: 800px) {
+    .primera, .segunda, .tercera{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contenedor-banner-programas {
+        margin: 0; /* Elimina márgenes en dispositivos más pequeños */
+    }
+
+    .text-banner-programas {
+        font-size: 18px;
+    }
+
+    .new-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-program-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+

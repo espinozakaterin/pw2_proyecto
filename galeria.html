@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria de imagenes</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    {{>header}}
+    <main>
+    <div class="galeria">
+        <h1>Galeria De Imagenes</h1>
+        <div class="linea"></div>
+        <div class="contenedor-imagenes">
+            <div class="imagen">
+                <img src="fotos/Galeria/0.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/1.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/2.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/3.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/4.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/5.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/6.jpeg" alt="">
+               <div class="overlay">
+                <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/7.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/8.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/9.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/10.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/11.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/12.jpeg" alt="">
+               <div class="overlay">
+                <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/13.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/14.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/15.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/16.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/17.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/18.jpeg" alt="">
+               <div class="overlay">
+                <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/19.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+
+            <div class="imagen">
+                <img src="fotos/Galeria/20.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/21.jpeg" alt="">
+               <div class="overlay">
+                <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/22.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="fotos/Galeria/23.jpeg" alt="">
+                <div class="overlay">
+                    <h2>Skarshop</h2>
+                </div>
+            </div>
+
+    </div>
+</main>
+<br><br>
+{{>footer}}
+
+<section class="spinner-background">
+    <div class="spinner"></div>
+    <div class="spinner-text">Cargando</div>
+</section>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+            document.querySelector(".spinner-background").style.display = "none";
+        }, 400);
+    });
+</script>
+
+<script src="js/menu.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/questions.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web</title>
+    <link rel="stylesheet" href="less/style.less">
+    <link rel="stylesheet" href="css/programas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    {{>header}}
+    <main>
+
+        <section class="program-contenedor" id="programas">
+            <br>
+            <h2 class="subtitulo">Nuestros programas</h2>
+            <div class="contenedor-programas">
+                <img src="fotos/Logo-Skarshop.png" alt="">
+                <div class="checklist-programas">
+                    <div class="program">
+                        <h3 class="n-program"><span class="number">1</span>Programa de Fidelidad</h3>
+                        <p> Los clientes ganan puntos por cada compra, que luego pueden canjear por descuentos o
+                            productos gratuitos.
+                        </p>
+                    </div>
+                    <div class="program">
+                        <h3 class="n-program"><span class="number">2</span>Niveles de Membresía</h3>
+                        <p> Ofrecer niveles (Bronce, Plata, Oro) con beneficios incrementales
+                            como descuentos exclusivos, acceso anticipado a ventas y productos exclusivos.</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <br>
+          
+            <div class="contenedor-banner-programas">
+                <div class="overlay"></div>
+                <img src="fotos/P1.jpeg" alt="">
+                <p class="text-banner-programas">
+                    "¡Únete a Skarshop y descubre un mundo de beneficios exclusivos
+                    que te harán lucir increíble mientras ahorras en cada compra!" <br>
+                </p>
+            </div>
+            <br>
+            <!-- Programa 1 -->
+            <div class="new-cards-container">
+                <section class="new-program-card primera">
+                    <div class="container-cards-image">
+                        <div class="overlay-img-cards"></div>
+                        <img class="card-program-img" src="fotos/fidelidadcliente.jpg" alt="image">
+                    </div>
+                    <br>
+                    <h3 class="new-program-number"><span class="new-number">1</span>Programa de Fidelidad</h3>
+                    <ul class="new-list">
+                        <li class="new-list-item">Los clientes acumulan puntos por cada lempira gastado.
+                            Por ejemplo, 1 punto por cada L1 gastado. Estos puntos pueden canjearse por
+                            descuentos en futuras compras (e.g., 1000 puntos = L100 de descuento).
+                            Además, puntos adicionales pueden ser otorgados en ocasiones especiales como cumpleaños.
+                        </li>
+
+                    </ul>
+                    <div class="new-heading">Objetivos:</div>
+                    <p>
+                        El Programa de Fidelidad de Skarshop tiene como objetivo recompensar
+                        a nuestros clientes más leales por su apoyo continuo y fomentar la repetición de compras.
+                        Queremos que cada compra sea una oportunidad
+                        para ofrecerles beneficios adicionales y hacer que cada cliente se sienta valorado.
+                    </p>
+                    <div class="new-heading">Beneficios:</div>
+                    <ul class="new-list">
+                        <li class="new-list-item">Acumulacion de puntos</li>
+                        <li class="new-list-item">Descuentos Exclusivos</li>
+                    </ul>
+                    <div class="new-heading">Inscripción:</div>
+                    <p>Registrarse en Línea<br>Comienza a Acumular Puntos</p>
+
+                </section>
+
+                <!-- 2 -->
+                <section class="new-program-card segunda">
+                    <div class="container-cards-image">
+                        <div class="overlay-img-cards"></div>
+                        <img class="card-program-img" src="fotos/membresia.png" alt="image">
+                    </div>
+                    <br>
+                    <h3 class="new-program-number"><span class="new-number">2</span>Niveles de Membresía</h3>
+                    <div class="new-heading">Objetivos:</div>
+                    <p>
+                        El objetivo de los Niveles de Membresía en Skarshop es reconocer y premiar a nuestros clientes más comprometidos con beneficios exclusivos. Al ofrecer diferentes niveles, buscamos incentivar
+                         la lealtad y proporcionar una experiencia de compra personalizada y gratificante.
+                    </p>
+                    <div class="new-heading">Beneficios:</div>
+                    <ul class="new-list">
+                        <li class="new-list-item">Descuento Adicional</li>
+                        <li class="new-list-item">Acceso a Ofertas Especiales:</li>
+                        <li class="new-list-item">Regalos de Bienvenida</li>
+                    </ul>
+                    <div class="new-heading">Requisitos:</div>
+                    <p>Registro Inicial</p>
+
+                    <div class="new-heading">Inscripción:</div>
+                    <p>Es sencillo y automático una vez que te hayas registrado en nuestro Programa de Fidelidad. </p>
+
+                </section>
+
+
+            </div>
+        </section>
+        <br>
+    </main>
+
+    {{>footer}}
+
+    <section class="spinner-background">
+        <div class="spinner"></div>
+        <div class="spinner-text">Cargando</div>
+    </section>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.querySelector(".spinner-background").style.display = "none";
+            }, 400);
+        });
+    </script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/questions.js"></script>
+</body>
+
+</html>
